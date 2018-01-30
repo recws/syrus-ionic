@@ -1,0 +1,8 @@
+{
+  "name": "syrus-ionic",
+  "app_id": "215764f9",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

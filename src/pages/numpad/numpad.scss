@@ -1,0 +1,35 @@
+.numpad-result h4 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    line-height: 40px;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.numpad-result {
+    height: 30%;
+    position: relative;
+}
+
+.numpad-numbers {
+    height: 70%;
+    //margin-left: auto;
+    //margin-right: auto;
+    display: block;
+    
+
+}
+
+.numpad-numbers .row {
+    height: 20%;
+}
+
+.btn {
+    
+    height: 50px;
+    width: 95px;
+    //border-radius: 50%;
+    border: 1px ;
+  }
+

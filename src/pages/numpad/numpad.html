@@ -1,0 +1,39 @@
+<ion-content padding>
+	<ion-row>
+		<ion-col width-50 style="text-align: center">		
+			<h4 class="text-center">&nbsp; {{ passCode }}</h4 >
+		</ion-col>
+	</ion-row>
+	
+	<ion-row>
+		<ion-col width-50 style="text-align: center">
+			<button ion-button large (click)="onNumClick(7)"  class="btn" >7</button >
+			<button ion-button large (click)="onNumClick('8')" class="btn" >8</button >
+			<button ion-button large (click)="onNumClick('9')" class="btn" >9</button >
+		</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col width-50 style="text-align: center">
+			<button ion-button large (click)="onNumClick('4')" class="btn" >4</button >
+			<button ion-button large (click)="onNumClick('5')" class="btn" >5</button >
+			<button ion-button large (click)="onNumClick('6')" class="btn" >6</button >
+		</ion-col>
+	</ion-row>
+	
+	<ion-row>
+		<ion-col width-50 style="text-align: center">
+			<button ion-button large (click)="onNumClick('1')" class="btn" >1</button >
+			<button ion-button large (click)="onNumClick('2')" class="btn" >2</button >
+			<button ion-button large (click)="onNumClick('3')" class="btn" >3</button >
+		</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col width-50 style="text-align: center">
+			<button ion-button large color="danger" (click)="finish()" class="btn" >OK {{ submitText }}</button >
+			<button ion-button large (click)="onNumClick('0')" class="btn" >0</button >			
+			<button ion-button large (click)="clear()" color="secondary" class="btn" >C</button >
+		</ion-col>
+	</ion-row>
+</ion-content>
