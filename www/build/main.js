@@ -52,7 +52,7 @@ var LeerDatosPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_erp_api_erp_api__ = __webpack_require__(161);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -127,7 +127,7 @@ var LoginPage = (function () {
     ], LoginPage.prototype, "password", void 0);
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Elite\src-ionic\syrus-ionic\src\pages\login\login.html"*/'<ion-content class="login-content" padding>\n\n    <ion-row class="logo-row">\n\n      <ion-col></ion-col>\n\n      <ion-col width-67>\n\n        <img src="../../assets/imgs/71cc8b5c4e5a.png" width="500" height="180"/>\n\n        <!--<ion-img width="500" height="180" src="../../assets/imgs/71cc8b5c4e5a.png"></ion-img>-->\n\n      </ion-col>\n\n      <ion-col></ion-col>\n\n    </ion-row>\n\n    <div class="login-box">\n\n      <form (ngSubmit)="login()" #registerForm="ngForm">\n\n        <ion-row>\n\n          <ion-col>\n\n            <ion-list inset>\n\n              \n\n              <ion-item>\n\n                <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="username" required></ion-input>\n\n              </ion-item>\n\n              \n\n              <ion-item>\n\n                <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password" required></ion-input>\n\n              </ion-item>\n\n              \n\n            </ion-list>\n\n          </ion-col>\n\n        </ion-row>\n\n        \n\n        <ion-row>\n\n          <ion-col class="signup-col">\n\n            <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid" >Login</button>            \n\n          </ion-col>\n\n        </ion-row>\n\n        \n\n      </form>\n\n    </div>\n\n  </ion-content>'/*ion-inline-end:"C:\Users\Elite\src-ionic\syrus-ionic\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Elite\src-ionic\syrus-ionic\src\pages\login\login.html"*/'<ion-content class="login-content" padding>\n\n    <ion-row class="logo-row">\n\n      <ion-col></ion-col>\n\n      <ion-col width-67>\n\n        <!--<ion-img src="assets/imgs/71cc8b5c4e5a.png" width="500" height="180"></ion-img>-->\n\n        <ion-img width="200" height="100" src="assets/imgs/71cc8b5c4e5a.png"></ion-img>\n\n      </ion-col>\n\n      <ion-col></ion-col>\n\n    </ion-row>\n\n    <div class="login-box">\n\n      <form (ngSubmit)="login()" #registerForm="ngForm">\n\n        <ion-row>\n\n          <ion-col>\n\n            <ion-list inset>\n\n              \n\n              <ion-item>\n\n                <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="username" required></ion-input>\n\n              </ion-item>\n\n              \n\n              <ion-item>\n\n                <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password" required></ion-input>\n\n              </ion-item>\n\n              \n\n            </ion-list>\n\n          </ion-col>\n\n        </ion-row>\n\n        \n\n        <ion-row>\n\n          <ion-col class="signup-col">\n\n            <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid" >Login</button>            \n\n          </ion-col>\n\n        </ion-row>\n\n        \n\n      </form>\n\n    </div>\n\n  </ion-content>'/*ion-inline-end:"C:\Users\Elite\src-ionic\syrus-ionic\src\pages\login\login.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_3__providers_erp_api_erp_api__["a" /* ErpApiProvider */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_3__providers_erp_api_erp_api__["a" /* ErpApiProvider */]])
@@ -218,6 +218,7 @@ var NumpadPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_ble__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_diagnostic__ = __webpack_require__(271);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -231,6 +232,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the ProbarConexionPage page.
  *
@@ -238,12 +240,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ProbarConexionPage = (function () {
-    function ProbarConexionPage(navCtrl, navParams, ble, ngZone, toastCtrl) {
+    function ProbarConexionPage(navCtrl, navParams, ble, ngZone, toastCtrl, diagnostic) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.ble = ble;
         this.ngZone = ngZone;
         this.toastCtrl = toastCtrl;
+        this.diagnostic = diagnostic;
         this.devices = [];
     }
     ProbarConexionPage.prototype.ionViewDidLoad = function () {
@@ -255,15 +258,100 @@ var ProbarConexionPage = (function () {
     ProbarConexionPage.prototype.disconnect = function () {
     };
     ProbarConexionPage.prototype.scan = function () {
+        // let successCallback = (isAvailable) => { console.log('Is available? ' + isAvailable); };
+        // let errorCallback = (e) => console.error(e);
+        // this.diagnostic.isCameraAvailable().then(successCallback).catch(errorCallback);
+        // this.diagnostic.isBluetoothAvailable().then(successCallback, errorCallback);
         var _this = this;
-        this.setStatus('Scanning for Bluetooth LE Devices');
-        this.devices = []; // clear list
-        this.ble.isEnabled().then(function (result) {
-            _this.ble.scan([], 5).subscribe(function (device) { return _this.onDeviceDiscovered(device); }, function (error) { return _this.scanError(error); });
+        //////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////// Forma para pedir VARIOS PERMISOS en una sola solicitud /////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////
+        this.DesconectarSyrus(this.DispositivoConectado);
+        var list_permissions = [
+            this.diagnostic.permission.CAMERA,
+            this.diagnostic.permission.ACCESS_COARSE_LOCATION,
+            this.diagnostic.permission.ACCESS_FINE_LOCATION,
+            this.diagnostic.permission.SEND_SMS,
+            this.diagnostic.permission.READ_SMS,
+            this.diagnostic.permission.RECEIVE_SMS,
+            this.diagnostic.permission.RECORD_AUDIO,
+            this.diagnostic.permission.READ_EXTERNAL_STORAGE,
+            this.diagnostic.permission.WRITE_EXTERNAL_STORAGE
+        ];
+        this.diagnostic.requestRuntimePermissions(list_permissions)
+            .then(function (state) {
+            _this.setStatus('Permisos autorizados');
         }).catch(function (error) {
-            _this.setStatus('Ocurrio un error al consultar el estatus del bluetooth. (Actualmente desactivado)');
+            console.log(error);
         });
-        setTimeout(this.setStatus.bind(this), 5000, 'Scan complete');
+        //Cargar listado de dispositivos cercanos
+        this.diagnostic.getBluetoothState()
+            .then(function (state) {
+            if (state == _this.diagnostic.bluetoothState.POWERED_ON) {
+                _this.setStatus('Scanning for Bluetooth LE Devices');
+                _this.devices = []; // clear list
+                _this.ble.isEnabled()
+                    .then(function (result) {
+                    _this.ble.scan([], 5).subscribe(function (device) { return _this.onDeviceDiscovered(device); }, function (error) { return _this.scanError(error); });
+                })
+                    .catch(function (error) {
+                    _this.setStatus('Ocurrio un error al consultar el estatus del bluetooth. (Actualmente desactivado)');
+                });
+            }
+            else {
+                // do something else
+                _this.ble.enable();
+            }
+        }).catch(function (e) { return console.error(e); });
+        //////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////Forma para pedir un permiso individual/////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////
+        // this.diagnostic.isCameraAuthorized()
+        // .then((state) => {
+        //   if (state == this.diagnostic.getCameraAuthorizationStatus()){
+        //     this.setStatus('Camara autorizada');
+        //   } else {
+        //     this.setStatus('Solicitando autorizacion de la camara');
+        //     let permission = this.diagnostic.permission;
+        //     this.diagnostic.requestRuntimePermission(permission.CAMERA).then(
+        //       success => {
+        //         this.setStatus('reuqestCameraAuthroization, success');
+        //         console.log('reuqestCameraAuthroization, success', success);
+        //       },
+        //       error => {
+        //         this.setStatus('reuqestCameraAuthroization, error');
+        //         console.log('reuqestCameraAuthroization, error', error);
+        //       },
+        //     );
+        //   }
+        // }).catch(
+        //   e => console.error(e)
+        // );
+        //////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////Forma para pedir un permiso individual/////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////
+        // this.diagnostic.isLocationAuthorized()
+        // .then((state) => {
+        //   if (state == this.diagnostic.getCameraAuthorizationStatus()){
+        //     this.setStatus('Localizacion autorizada');
+        //   } else {
+        //     this.setStatus('Solicitando autorizacion de localizacion');
+        //     let permission = this.diagnostic.permission;    
+        //     this.diagnostic.requestRuntimePermission(permission.ACCESS_FINE_LOCATION).then(
+        //       success => {
+        //         this.setStatus('reuqestLocationAuthroization, success');
+        //         console.log('reuqestLocationAuthroization, success', success);
+        //       },
+        //       error => {
+        //         this.setStatus('reuqestLocationAuthroization, error');
+        //         console.log('reuqestLocationAuthroization, error', error);
+        //       },
+        //     );
+        //   }
+        // }).catch(
+        //   e => console.error(e)
+        // );
+        // setTimeout(this.setStatus.bind(this), 5000, 'Scan complete');
     };
     ProbarConexionPage.prototype.onDeviceDiscovered = function (device) {
         var _this = this;
@@ -271,6 +359,9 @@ var ProbarConexionPage = (function () {
         this.ngZone.run(function () {
             _this.devices.push(device);
         });
+        if (device.name == "Syrus 3GBT 76516") {
+            this.ConectaraSyrus(device);
+        }
     };
     // If location permission is denied, you'll end up here
     ProbarConexionPage.prototype.scanError = function (error) {
@@ -281,6 +372,84 @@ var ProbarConexionPage = (function () {
             duration: 5000
         });
         toast.present();
+    };
+    ProbarConexionPage.prototype.ConectaraSyrus = function (device) {
+        var _this = this;
+        // this.DesconectarSyrus(device);
+        this.setStatus('Conectando a... ' + device.name);
+        this.ble.connect(device.id).subscribe(function (data) {
+            _this.DispositivoConectado = device;
+            _this.setStatus('Conectado a... ' + device.name);
+            _this.sendBluetoothAuth(device, '357042063176516');
+            _this.ListenMessageBT();
+        }, function (err) {
+            _this.setStatus('Error al conectar a... ' + device.name);
+        });
+    };
+    ProbarConexionPage.prototype.DesconectarSyrus = function (device) {
+        var _this = this;
+        try {
+            if (device == null || device.id == undefined || device.id == "") {
+                return;
+            }
+            this.ble.disconnect(device.id).then(function (response) {
+                _this.setStatus('Desconectado de... ' + device.name);
+            })
+                .catch(function (err) {
+                _this.setStatus('Error al desconectar de... ' + device.name);
+            });
+        }
+        catch (e) {
+            this.setStatus(e);
+        }
+    };
+    ProbarConexionPage.prototype.sendBluetoothAuth = function (device, IMEI) {
+        // Send command larger than 50 on two partitions
+        var code = IMEI.substr(IMEI.length - 5);
+        this.SendMessageBT(device, ">SBIK" + code + "<");
+        this.setStatus('Enviando Autorizacion BT ' + device.name);
+    };
+    ProbarConexionPage.prototype.SendMessageBT = function (device, command) {
+        var _this = this;
+        this.ble.writeWithoutResponse(device.id, "00000000-dc70-0080-dc70-a07ba85ee4d6", "00000000-dc70-0180-dc70-a07ba85ee4d6", this.stringToBytes(command)).
+            then(function (data) {
+            _this.setStatus('Comando enviado... ' + command);
+            return data;
+        }).
+            catch(function (err) {
+            console.error(err);
+        });
+    };
+    ProbarConexionPage.prototype.ListenMessageBT = function () {
+        var _this = this;
+        this.ble.startNotification(this.DispositivoConectado.id, "00000000-dc70-0080-dc70-a07ba85ee4d6", "00000000-dc70-0180-dc70-a07ba85ee4d6")
+            .subscribe(function (data) {
+            var buffer;
+            if (_this.bytesToString(data).indexOf(">") != -1) {
+                buffer = "";
+            }
+            buffer += _this.bytesToString(data);
+            if (buffer.indexOf("<") != -1) {
+                _this.setStatus('Mensaje recibido... ' + buffer);
+                buffer = "";
+                // this.commandProcceser();
+                if (buffer.indexOf("RBIK1") != -1) {
+                    _this.setStatus('Autenticado... ' + buffer);
+                }
+            }
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    ProbarConexionPage.prototype.stringToBytes = function (string) {
+        var array = new Uint8Array(string.length);
+        for (var i = 0, l = string.length; i < l; i++) {
+            array[i] = string.charCodeAt(i);
+        }
+        return array.buffer;
+    };
+    ProbarConexionPage.prototype.bytesToString = function (buffer) {
+        return String.fromCharCode.apply(null, new Uint8Array(buffer));
     };
     ProbarConexionPage.prototype.deviceSelected = function (device) {
         console.log(JSON.stringify(device) + ' selected');
@@ -298,9 +467,9 @@ var ProbarConexionPage = (function () {
     ProbarConexionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-probar-conexion',template:/*ion-inline-start:"C:\Users\Elite\src-ionic\syrus-ionic\src\pages\probar-conexion\probar-conexion.html"*/'<!--\n\n  Generated template for the ProbarConexionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Probar Conexion</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <p>Datos</p>\n\n\n\n\n\n  <ion-header>\n\n      <ion-navbar>\n\n        <ion-title>\n\n          BLE Connect\n\n        </ion-title>\n\n        <ion-buttons end>\n\n          <button ion-button (click)="scan()">\n\n            Scan\n\n          </button>\n\n        </ion-buttons>\n\n      </ion-navbar>\n\n    </ion-header>\n\n    \n\n    <ion-content>\n\n       <ion-list> \n\n        <button ion-item *ngFor="let device of devices" (click)="deviceSelected(device)">\n\n          <h2>{{ device.name || \'Unnamed\' }}</h2>\n\n          <p>{{ device.id }}</p>\n\n          <p>RSSI: {{ device.rssi }}</p>\n\n        </button>  \n\n       </ion-list> \n\n    </ion-content>\n\n    \n\n    <ion-footer>\n\n      <ion-toolbar>\n\n        <p>{{ statusMessage }}</p>\n\n      </ion-toolbar>\n\n    </ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Elite\src-ionic\syrus-ionic\src\pages\probar-conexion\probar-conexion.html"*/,
-            providers: [__WEBPACK_IMPORTED_MODULE_2__ionic_native_ble__["a" /* BLE */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_2__ionic_native_ble__["a" /* BLE */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_diagnostic__["a" /* Diagnostic */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_ble__["a" /* BLE */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_ble__["a" /* BLE */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_diagnostic__["a" /* Diagnostic */]])
     ], ProbarConexionPage);
     return ProbarConexionPage;
 }());
@@ -331,19 +500,19 @@ webpackEmptyAsyncContext.id = 118;
 
 var map = {
 	"../pages/leer-datos/leer-datos.module": [
-		291,
+		292,
 		3
 	],
 	"../pages/login/login.module": [
-		292,
+		293,
 		2
 	],
 	"../pages/numpad/numpad.module": [
-		293,
+		294,
 		1
 	],
 	"../pages/probar-conexion/probar-conexion.module": [
-		294,
+		295,
 		0
 	]
 };
@@ -462,15 +631,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(288);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_leer_datos_leer_datos__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_probar_conexion_probar_conexion__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_numpad_numpad__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_common_http__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__(291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_erp_api_erp_api__ = __webpack_require__(161);
@@ -547,7 +716,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 288:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -556,7 +725,7 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_leer_datos_leer_datos__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_probar_conexion_probar_conexion__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_numpad_numpad__ = __webpack_require__(104);
@@ -625,7 +794,7 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 289:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -682,7 +851,7 @@ var ListPage = (function () {
 
 /***/ }),
 
-/***/ 78:
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -90,5 +90,7 @@
         <variable name="MAX_STORE" value="2" />
     </plugin>
     <allow-navigation href="http://192.168.1.101:8100" />
+    <plugin name="cordova.plugins.diagnostic" spec="^3.9.2" />
+    <allow-navigation href="http://192.168.1.75:8100" />
     <engine name="android" spec="^7.0.0" />
 </widget>

@@ -25678,6 +25678,25 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.toolbar-background {
+  background-color: #2592f8;
+}
+
+.toolbar-title-md {
+  color: #ffffff;
+}
+
+.toolbar-md {
+  color: #ffffff;
+}
+
+/*.toolbar-text-color {
+    font: #ffffff;
+}*/
+/*$toolbar-border-color
+$toolbar-text-color
+$toolbar-active-color
+$toolbar-inactive-color*/
 page-login .login-content {
   background: #ffffff;
 }

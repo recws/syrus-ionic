@@ -14,3 +14,25 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.toolbar-background {
+    background-color: rgb(37, 146, 248);    
+}
+
+.toolbar-title-md{
+    color: #ffffff;    
+}
+
+.toolbar-md{
+    color: #ffffff;
+}
+
+/*.toolbar-text-color {
+    font: #ffffff;
+}*/
+
+//$toolbar-background : rgb(37, 146, 248);
+//$toolbar-text-color : #ffffff;
+/*$toolbar-border-color
+$toolbar-text-color
+$toolbar-active-color
+$toolbar-inactive-color*/
